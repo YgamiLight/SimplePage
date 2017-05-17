@@ -1,0 +1,90 @@
+/*reset CSS*/
+*{
+    margin:0;padding:0;box-sizing:border-box;
+}
+body{
+    background-color:#ddd;
+    max-width:1300px;
+    margin:0px auto;
+}
+.UserImg{
+
+    text-align: center;
+    background-color:skyblue;
+    padding-bottom:1px;
+}
+.UserImg>img{
+    background-color:
+    margin-top:20px;
+    height:250px;
+    width:250px;
+    border-radius:125px;
+}
+.description{
+    font-size:1.5em;
+    margin:30px auto;
+}
+.UserImg span{
+    display:inline-block;
+    padding:3px 2.5em;
+}
+
+.mainMessage{
+
+    background-color:#fff;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom:20px;
+    font-size:1.5em;
+}
+.mainMessage>h2{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.mainMessage p{
+    margin:40px auto;
+}
+
+.container{
+    padding:20px auto;
+    background-color:pink;
+}
+
+.container>ul{
+    margin:20px auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+@media (max-width:425px){
+.container>ul{
+    margin-top:20px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+}
+.container ul li{
+    max-width:300px;
+    list-style: none;
+    text-align:center;
+    margin-bottom:20px;
+}
+.container ul li div{
+    max-width:300px;
+}
+.container ul{
+    max-width:1000px;
+}
+.container>ul>li>div>img{
+    width:300px;
+    height:300px;
+    vertical-align: top;
+}
+.container h2{
+    text-align:center;
+}
+.container ul li p{   
+    max-width:300px;
+    margin:2px 35px;
+}
