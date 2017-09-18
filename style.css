@@ -5,20 +5,28 @@
 body{
     background-color:#ddd;
     max-width:1300px;
-    margin:0px auto;
+    margin:0 auto;
 }
 .UserImg{
-
     text-align: center;
     background-color:skyblue;
     padding-bottom:1px;
 }
-.UserImg>img{
-    background-color:
-    margin-top:20px;
-    height:250px;
-    width:250px;
-    border-radius:125px;
+.wrapContainer{
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.imgWrapper{
+    padding-top:100%;
+    position: relative;
+}
+.imgWrapper > img{
+    width:100%;
+    height:auto;
+    position: absolute;
+    top:0;
+    left:0;
 }
 .description{
     font-size:1.5em;
@@ -47,14 +55,38 @@ body{
 
 .container{
     padding:20px auto;
-    background-color:pink;
-}
-
-.container>ul{
-    margin:20px auto;
+    background-color: #ddd;
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    max-width:1300px;
+}
+.container > h2 {
+    width:100%;
+    text-align: center;
+    margin:20px auto;
+}
+.container  .personWrapper{
+    width:30%;
+    text-align: center;
+}
+.container .personWrapper > h3{
+    margin-top:10px;
+}
+.container .personWrapper > p{
+    margin-top:20px;
+    width:100%;
+}
+.container .personWrapper > .oneToOne{
+    padding-top:100%;
+    position: relative;
+}
+.container .personWrapper .oneToOne img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
 }
 @media (max-width:425px){
 .container>ul{
@@ -64,27 +96,4 @@ body{
     justify-content: center;
 }
 }
-.container ul li{
-    max-width:300px;
-    list-style: none;
-    text-align:center;
-    margin-bottom:20px;
-}
-.container ul li div{
-    max-width:300px;
-}
-.container ul{
-    max-width:1000px;
-}
-.container>ul>li>div>img{
-    width:300px;
-    height:300px;
-    vertical-align: top;
-}
-.container h2{
-    text-align:center;
-}
-.container ul li p{   
-    max-width:300px;
-    margin:2px 35px;
-}
+
